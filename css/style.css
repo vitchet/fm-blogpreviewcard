@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* || RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* || VARIABLES */
+
+:root {
+    --yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 50%);
+    --black: hsl(0, 0%, 7%);
+
+    /* TODO change to responsive */
+    --body-padding: 2rem;
+    --component-width: calc(375px - var(--body-padding));
+}
+
+/* || GENERAL */
+
+html {
+    font-size: 16px;
+    font-family: "Figtree", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: var(--body-padding);
+    background-color: var(--yellow);
+}
+
+/* || COMPONENTS */
+
+.blog-card-preview-component {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 1rem;
+    width: var(--component-width);
+    padding: 1.6rem 1.4rem;
+    background-color: var(--white);
+    border: 1px solid var(--black);
+    border-radius: 1.2rem;
+    box-shadow: 0.5rem 0.5rem var(--black);
+
+    header,
+    section,
+    footer {
+        width: 100%;
+    }
+
+    header {
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 1.2rem;
+
+        img {
+            border-radius: 0.6rem;
+        }
+
+        section {
+            display: flex;
+            flex-flow: column nowrap;
+            gap: 0.8rem;
+
+            b {
+                width: fit-content;
+                font-size: 0.75em;
+                font-weight: 900;
+                background-color: var(--yellow);
+                padding: 0.3rem 0.6rem;
+                border-radius: 0.25rem;
+            }
+
+            p {
+                color: var(--black);
+                font-size: 0.8rem;
+                font-weight: 600;
+            }
+        }
+    }
+
+    section {
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 1rem;
+
+        h1 {
+            font-weight: 900;
+        }
+
+        p {
+            color: var(--grey);
+            font-size: 0.85em;
+            font-weight: 500;
+            line-height: 1.5em;
+        }
+    }
+
+    footer {
+        figure {
+            width: 100%;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.85em;
+            font-weight: 900;
+            margin-top: 0.5rem;
+
+            img {
+                width: 2rem;
+            }
+        }
+    }
+}
+
+/* || OTHER */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
