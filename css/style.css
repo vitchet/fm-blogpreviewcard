@@ -17,20 +17,20 @@ img {
 /* || VARIABLES */
 
 :root {
-    /* COLORS */
+    /* Colors */
     --yellow: hsl(47, 88%, 63%);
     --white: hsl(0, 0%, 100%);
     --grey: hsl(0, 0%, 50%);
     --black: hsl(0, 0%, 7%);
 
-    /* STATIC VALUES */
-    /* Note that some values are presented without units */
+    /* Static Values */
+    /* Note that values are presented without units. */
     --screen-width-base: 375;
     --screen-width-min: 320;
     --screen-width-max: 770;
     --font-size-base: 16;
 
-    /* CALCULATED VALUES */
+    /* Calculated Values */
     --font-size-min: calc(var(--screen-width-min) / var(--screen-width-base) * var(--font-size-base) * 1px);
     --font-size-max: calc(var(--screen-width-max) / var(--screen-width-base) * var(--font-size-base) * 1px);
     --font-size-val: calc(100vw / var(--screen-width-base) * var(--font-size-base));
@@ -117,11 +117,21 @@ body {
 
         h1 {
             font-weight: 900;
+
+            a,
+            a:visited {
+                text-decoration: none;
+                color: var(--black);
+            }
+
+            a:hover {
+                color: var(--yellow);
+            }
         }
 
         p {
             color: var(--grey);
-            font-size: 0.85em;
+            font-size: 0.85rem;
             font-weight: 500;
             line-height: 1.5em;
         }
