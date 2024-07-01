@@ -97,6 +97,7 @@ body {
                 width: fit-content;
                 font-size: 0.75em;
                 font-weight: 900;
+                color: var(--black);
                 background-color: var(--yellow);
                 padding: 0.3rem 0.6rem;
                 border-radius: 0.25rem;
@@ -145,6 +146,7 @@ body {
             justify-content: flex-start;
             align-items: center;
             gap: 0.5rem;
+            color: var(--black);
             font-size: 0.85em;
             font-weight: 900;
             margin-top: 0.5rem;
