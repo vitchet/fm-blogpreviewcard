@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://github.com/vitchet/fm-blogpreviewcard
+- Live Site URL: https://vitchet.github.io/fm-blogpreviewcard
 
 ### Built with
 
@@ -44,4 +44,4 @@ Also I improved usage of CSS variables to make the code easier to adjust.
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@vitchet](https://www.frontendmentor.io/profile/vitchet)
