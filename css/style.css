@@ -59,6 +59,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    min-height: 100vh;
     padding: var(--body-padding);
     background-color: var(--yellow);
 }
@@ -129,7 +130,8 @@ body {
                 color: var(--black);
             }
 
-            a:hover {
+            a:hover,
+            a:focus {
                 color: var(--yellow);
             }
         }
